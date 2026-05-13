@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0e27">
+    <meta name="description" content="GigaMerge Studio - Premium Creative Marketplace. Connect with top creators and hire the best talents.">
+    
+    <title>GigaMerge Studio - Premium Creative Marketplace</title>
+    
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/premium.css">
+    <link rel="stylesheet" href="styles/animations-premium.css">
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%2300d9ff;stop-opacity:1' /><stop offset='100%' style='stop-color:%236366f1;stop-opacity:1' /></linearGradient></defs><rect fill='url(%23g)' width='180' height='180'/><text x='50%' y='50%' font-size='80' font-weight='900' fill='white' text-anchor='middle' dominant-baseline='central' font-family='system-ui'>GM</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <div class="navbar-brand">
+                <div class="brand-logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect width="32" height="32" rx="8" fill="url(#gradient)"/>
+                        <text x="16" y="22" font-size="20" font-weight="900" fill="white" text-anchor="middle" font-family="system-ui">GM</text>
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#00d9ff"/>
+                                <stop offset="100%" style="stop-color:#6366f1"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="brand-text">GigaMerge</span>
+            </div>
+            
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#creators" class="nav-link">Creators</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+            </div>
+            
+            <div class="navbar-actions">
+                <button class="btn-theme" id="themeToggle" title="Toggle theme">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 3.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13z"/>
+                    </svg>
+                </button>
+                <button class="btn-auth" id="authBtn">Sign In</button>
+            </div>
+            
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="navbar-divider"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb gradient-orb-1"></div>
+            <div class="gradient-orb gradient-orb-2"></div>
+            <div class="gradient-orb gradient-orb-3"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Now Live - Connecting 1000+ Creators</span>
+            </div>
+            
+            <h1 class="hero-title">
+                Unlock Your Creative <span class="gradient-text">Potential</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                Connect with top Video Editors, Developers & Content Writers. <br>
+                Build amazing projects together with verified talents.
+            </p>
+            
+            <div class="hero-buttons">
+                <button class="btn btn-primary btn-large" id="joinCreatorBtn">
+                    <span>Get Started as Creator</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 10h6m0 0l-3-3m3 3l-3 3"/>
+                    </svg>
+                </button>
+                <button class="btn btn-secondary btn-large" id="hireCreatorBtn">
+                    <span>Hire Top Talent</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 10h6m0 0l-3-3m3 3l-3 3"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-value">1,000+</div>
+                    <div class="stat-label">Verified Creators</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">500+</div>
+                    <div class="stat-label">Active Projects</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">4.8⭐</div>
+                    <div class="stat-label">Avg Rating</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <div class="floating-card card-1">
+                <div class="card-icon">🎬</div>
+                <div class="card-text">Video Editing</div>
+            </div>
+            <div class="floating-card card-2">
+                <div class="card-icon">💻</div>
+                <div class="card-text">Development</div>
+            </div>
+            <div class="floating-card card-3">
+                <div class="card-icon">✍️</div>
+                <div class="card-text">Content Writing</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose GigaMerge?</h2>
+                <p class="section-subtitle">Everything you need to succeed as a creator or find the perfect talent</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M2 16c0-7.732 6.268-14 14-14s14 6.268 14 14-6.268 14-14 14S2 23.732 2 16z"/>
+                            <path d="M11 16l3 3 7-7"/>
+                        </svg>
+                    </div>
+                    <h3>Verified Creators</h3>
+                    <p>All creators are verified and rated by previous clients</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="4" y="4" width="24" height="24" rx="2"/>
+                            <path d="M4 12h24M12 4v24"/>
+                        </svg>
+                    </div>
+                    <h3>Easy Portfolio</h3>
+                    <p>Showcase your best work with our professional portfolio builder</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 2v28M4 16h24"/>
+                            <circle cx="16" cy="16" r="14"/>
+                        </svg>
+                    </div>
+                    <h3>Secure Payments</h3>
+                    <p>Escrow protection for both creators and clients</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 12c0-2.21 1.79-4 4-4h8c2.21 0 4 1.79 4 4v8c0 2.21-1.79 4-4 4h-8c-2.21 0-4-1.79-4-4v-8z"/>
+                            <path d="M13 15h6"/>
+                        </svg>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Our dedicated team is always here to help you succeed</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 2C8.27 2 2 8.27 2 16s6.27 14 14 14 14-6.27 14-14S23.73 2 16 2z"/>
+                            <path d="M16 8v8l6.53 3.87"/>
+                        </svg>
+                    </div>
+                    <h3>Real-time Projects</h3>
+                    <p>Access thousands of projects posted daily</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 10h20M6 16h20M6 22h20M2 6h2v20H2z"/>
+                        </svg>
+                    </div>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Track earnings, ratings, and project progress in real-time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creators Section -->
+    <section id="creators" class="creators">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Top Creators</h2>
+                <p class="section-subtitle">Meet the best talents in the industry</p>
+            </div>
+            
+            <div class="filter-tags">
+                <button class="filter-tag active" data-filter="all">All</button>
+                <button class="filter-tag" data-filter="video">Video Editors</button>
+                <button class="filter-tag" data-filter="developer">Developers</button>
+                <button class="filter-tag" data-filter="writer">Writers</button>
+            </div>
+            
+            <div class="creators-grid" id="creatorsGrid">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Simple, transparent, and fair for everyone</p>
+            </div>
+            
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <h3>Create Your Profile</h3>
+                    <p>Sign up and showcase your skills and past work</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <h3>Browse Projects</h3>
+                    <p>Explore thousands of projects from clients worldwide</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <h3>Apply & Negotiate</h3>
+                    <p>Submit proposals and agree on terms and pricing</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <h3>Get Paid</h3>
+                    <p>Receive payments securely after work completion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Discover amazing opportunities</p>
+            </div>
+            
+            <div class="projects-showcase" id="projectsList">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">What Creators Say</h2>
+                <p class="section-subtitle">Real feedback from our community</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"GigaMerge changed my life! I went from struggling to find clients to having more projects than I can handle. Amazing platform!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SN</div>
+                        <div>
+                            <div class="author-name">Sarah Nash</div>
+                            <div class="author-title">Video Editor</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The payment system is transparent and secure. I love how easy it is to collaborate with clients and track project progress."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MK</div>
+                        <div>
+                            <div class="author-name">Marcus Khan</div>
+                            <div class="author-title">Full Stack Developer</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Best platform for content creators. The community is supportive and the opportunities are endless. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JW</div>
+                        <div>
+                            <div class="author-name">Jessica Wong</div>
+                            <div class="author-title">Content Writer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Simple, Transparent Pricing</h2>
+                <p class="section-subtitle">Choose the plan that works for you</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <p class="price-tag">Free</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Create profile</li>
+                        <li>✓ Browse projects</li>
+                        <li>✓ Basic portfolio</li>
+                        <li>✗ Advanced analytics</li>
+                        <li>✗ Priority support</li>
+                    </ul>
+                    <button class="btn btn-secondary btn-block">Get Started</button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <p class="price-tag">$9.99<span>/month</span></p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ All Starter features</li>
+                        <li>✓ Advanced analytics</li>
+                        <li>✓ Custom branding</li>
+                        <li>✓ Priority support</li>
+                        <li>✓ Featured profile</li>
+                    </ul>
+                    <button class="btn btn-primary btn-block">Start Free Trial</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <p class="price-tag">Custom</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ All Professional features</li>
+                        <li>✓ Dedicated account manager</li>
+                        <li>✓ API access</li>
+                        <li>✓ Custom integrations</li>
+                        <li>✓ White label options</li>
+                    </ul>
+                    <button class="btn btn-secondary btn-block">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Career?</h2>
+            <p>Join thousands of successful creators earning on GigaMerge today</p>
+            <button class="btn btn-primary btn-large">Start Your Journey</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-brand">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect width="32" height="32" rx="8" fill="url(#footerGradient)"/>
+                        <text x="16" y="22" font-size="20" font-weight="900" fill="white" text-anchor="middle" font-family="system-ui">GM</text>
+                        <defs>
+                            <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#00d9ff"/>
+                                <stop offset="100%" style="stop-color:#6366f1"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span>GigaMerge Studio</span>
+                </div>
+                <p>Where creativity meets opportunity</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#creators">Creators</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Discord</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 GigaMerge Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div class="modal" id="authModal">
+        <div class="modal-content">
+            <button class="modal-close" id="authModalClose">✕</button>
+            
+            <div class="auth-header">
+                <h2 id="authTitle">Sign In</h2>
+                <p id="authSubtitle">Access your GigaMerge account</p>
+            </div>
+            
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login">Login</button>
+                <button class="auth-tab" data-tab="signup">Sign Up</button>
+            </div>
+            
+            <div class="auth-content">
+                <!-- Login Form -->
+                <div class="auth-form active" id="loginForm">
+                    <input type="email" id="loginEmail" placeholder="Email address" class="input-field">
+                    <input type="password" id="loginPassword" placeholder="Password" class="input-field">
+                    <button class="btn btn-primary btn-block" id="loginBtn">Sign In</button>
+                    <div class="divider">OR</div>
+                    <button class="btn btn-secondary btn-block" id="googleLoginBtn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M19.6 10.2c0-.8-.1-1.7-.3-2.5H10v4.8h5.5c-.2 1.3-.9 2.4-1.9 3.1v2.4h3.1c1.8-1.7 2.8-4.2 2.8-7.1z"/>
+                        </svg>
+                        Continue with Google
+                    </button>
+                </div>
+                
+                <!-- Signup Form -->
+                <div class="auth-form" id="signupForm">
+                    <input type="text" id="signupName" placeholder="Full name" class="input-field">
+                    <input type="email" id="signupEmail" placeholder="Email address" class="input-field">
+                    <input type="password" id="signupPassword" placeholder="Password (min 8 chars)" class="input-field">
+                    
+                    <div class="role-selector">
+                        <label class="role-option">
+                            <input type="radio" name="role" value="creator" checked>
+                            <span>👨‍💻 I'm a Creator</span>
+                        </label>
+                        <label class="role-option">
+                            <input type="radio" name="role" value="client">
+                            <span>💼 I'm a Client</span>
+                        </label>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-block" id="signupBtn">Create Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot -->
+    <div class="chatbot-widget" id="chatbot">
+        <div class="chatbot-header">
+            <h3>GigaMerge AI</h3>
+            <button class="chatbot-close" id="chatbotClose">✕</button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="message bot-message">
+                <p>👋 Hi! How can I help you today?</p>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbotInput" placeholder="Type a message...">
+            <button id="chatbotSend">Send</button>
+        </div>
+    </div>
+
+    <button class="chatbot-toggle" id="chatbotToggle">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
